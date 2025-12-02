@@ -1,0 +1,8 @@
+IMPORTANT: Add your biodata PDF here
+
+Please add your biodata PDF file and name it exactly: biodata.pdf
+
+This file will be downloaded when visitors click the "Download Biodata" button on your website.
+
+You can convert your existing biodata image to PDF using online tools or Adobe Acrobat.
+

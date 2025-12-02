@@ -1,0 +1,20 @@
+# Public Directory
+
+This directory contains static assets for the website.
+
+## Required Files
+
+1. **profile-photo.jpg** - Your profile photo (recommended: 800x800px)
+2. **biodata.pdf** - Your downloadable biodata PDF
+3. **project-images/** - Directory for project screenshots
+4. **certifications/** - Directory for certification images
+5. **blog/** - Directory for blog post images
+6. **testimonials/** - Directory for testimonial author photos
+
+## Instructions
+
+1. Replace placeholder images with your actual photos
+2. Add your biodata.pdf file to enable the download button
+3. Organize project images in the project-images folder
+4. Add certification images to the certifications folder
+
