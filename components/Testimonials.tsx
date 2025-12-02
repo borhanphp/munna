@@ -39,7 +39,12 @@ export default function Testimonials() {
                     className="w-full h-full object-cover"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
-                      target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(testimonial.name)}&background=0d9488&color=fff&size=128`;
+                      target.style.display = "none";
+                      const parent = target.parentElement;
+                      if (parent) {
+                        const initials = testimonial.name.split(' ').map(n => n[0]).join('');
+                        parent.innerHTML = '<div class="w-full h-full bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center text-white text-lg font-bold">' + initials + '</div>';
+                      }
                     }}
                   />
                 </div>

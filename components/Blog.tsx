@@ -25,7 +25,11 @@ export default function Blog() {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
-                    target.src = `https://via.placeholder.com/600x400?text=${encodeURIComponent(post.category)}`;
+                    target.style.display = "none";
+                    const parent = target.parentElement;
+                    if (parent) {
+                      parent.innerHTML = '<div class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center text-white text-2xl font-bold">' + post.category + '</div>';
+                    }
                   }}
                 />
                 <div className="absolute top-4 right-4">
